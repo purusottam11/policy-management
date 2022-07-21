@@ -2,6 +2,7 @@ package com.embea.policymanagement.controller;
 
 import com.embea.policymanagement.dto.*;
 import com.embea.policymanagement.service.PolicyService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -13,6 +14,7 @@ import java.util.Date;
 @RestController
 public class PolicyController {
 
+    @Autowired
     private PolicyService policyService;
 
     @PostMapping("/create")
